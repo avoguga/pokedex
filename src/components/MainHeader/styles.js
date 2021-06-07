@@ -2,21 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   grid-area: MH;
-  
-  background-color: #ffc288;
 
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   
-  justify-content: flex-end;
-
-  align-items: center;
-
-  padding: 0 10px;
-
-  border-bottom: 1px solid #FFF;
+    svg{
+      color:#f6f6f6;
+    }
+  
 `;
 
 export const Welcome = styled.h3`
-  
+  margin: 20px 20px;
 `;

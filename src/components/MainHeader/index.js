@@ -1,11 +1,11 @@
 import React from 'react';
-
 import { Container, Welcome } from './styles'
-
+import pokeball from '../../assets/patterns/pokeball.svg'
 const MainHeader = () => {
   return(
     <Container>
-      <Welcome>Bem vindo! Softmaker!</Welcome>
+      <img src={pokeball}/>
+      <Welcome>icon icon icon</Welcome>
     </Container>
   );
 }
