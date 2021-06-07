@@ -2,13 +2,26 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   grid-area: MH;
-
   display: flex;
   justify-content: space-between;
-  
-    svg{
-      color:#f6f6f6;
+
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    margin-bottom: 120px;
+    > svg {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+
+    path {
+      fill: #f6f6f6;
     }
+  }
+  }
   
 `;
 
