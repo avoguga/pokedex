@@ -7,13 +7,18 @@ import {
 
 const Pokemon = (props) => {
   const { pokemon } = props;
+  
+  //Função para deixar a primeira letra maiscula
+  String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.substr(1);
+  }
 
   return (
     <Card>
       <CardArea>
           <div>#{pokemon.id}</div>
-          <h3>{pokemon.name}</h3>
-          <div className="pokemon-type">
+          <h3>{pokemon.name.capitalize()}</h3>
+          <div>
             {pokemon.types.map((type, idx) => {
               return (
                 <PokemonType key={idx}>
