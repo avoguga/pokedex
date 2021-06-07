@@ -34,10 +34,8 @@ export const InputArea = styled.div`
   }
 `;
 
-export const Input = styled.input`
-  background-color: #f2f2f2;
-  width: 400px;
-  height: 50px;
-  padding: 10px;
-  font-size: 18px;
+export const NotFound = styled.p`
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
 `;
