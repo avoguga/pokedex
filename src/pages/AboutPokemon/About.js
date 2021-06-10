@@ -1,5 +1,5 @@
-import Layout from '../components/Layout/LayoutHome'
-import GlobalStyle from '../styles/GlobalStyles';
+import GlobalStyle from '../../styles/GlobalStyles';
+import Layout from '../../components/Layout/LayoutAboutPokemon'
 function App() {
   return (
     <div className="App">

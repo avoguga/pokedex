@@ -7,7 +7,7 @@ export const Card = styled.div`
   height: 115px;
 
   border-radius: 10px;
-  background-color: #021;
+  background-color: ${props => props.color };
   box-shadow: 1px 3px 12px 0 rgba(0, 0, 0, 0.3);
 
   transition: all ease 0.5s;
