@@ -7,7 +7,7 @@ export const Card = styled.div`
   height: 115px;
 
   border-radius: 10px;
-  background-color: brown;
+  background-color: #021;
   box-shadow: 1px 3px 12px 0 rgba(0, 0, 0, 0.3);
 
   transition: all ease 0.5s;
@@ -20,6 +20,8 @@ export const Card = styled.div`
 
     > img {
       top: -45px;
+      -webkit-transition: -webkit-filter 400ms ease;
+      transition: all ease 0.4s;
     }
   }
 
@@ -61,6 +63,7 @@ export const PokemonType = styled.div`
   margin-right: 10px;
   text-transform: capitalize;
   color: #fff;
+
 `;
 
 export const PokemonName = styled.h3`

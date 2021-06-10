@@ -12,7 +12,10 @@ const Pokemon = (props) => {
   const { pokemon } = props;
 
   return (
-    <Card>
+
+    // Cards dos pokemons
+
+    <Card color={pokemon.type}>
       <CardArea>
           <div>#{pokemon.id}</div>
           <PokemonName>{pokemon.name}</PokemonName>

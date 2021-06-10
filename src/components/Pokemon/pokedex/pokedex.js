@@ -9,6 +9,9 @@ const Pokedex = (props) => {
   const { pokemons, loading } = props;
 
   return (
+
+    // Spinner para loading dos pokemons.
+
     <div>
       {loading ? (
         <Spinner/>

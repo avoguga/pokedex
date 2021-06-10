@@ -20,6 +20,9 @@ const Content = () => {
   const fetchPokemons = async () => {
     try {
       setLoading(true);
+
+      // Aqui está settado no maximo 150 pokemons por pagina. 
+
       const data = await getPokemons(150, 150 * page);
       const promises = data.results.map(async (pokemon) => {
         return await getPokemonData(pokemon.url);
@@ -27,7 +30,6 @@ const Content = () => {
       const results = await Promise.all(promises);
       setPokemons(results);
       setLoading(false);
-
       setNotFound(false);
     } catch (err) {}
   };
